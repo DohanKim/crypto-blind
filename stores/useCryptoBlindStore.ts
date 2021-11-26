@@ -40,7 +40,7 @@ const useCryptoBlindStore = create<CryptoBlindStore>((set, get) => {
           const accounts = await ethereum.request({ method: "eth_accounts" });
 
           console.log(accounts);
-          if (accounts) {
+          if (accounts && accounts.length > 0) {
             connected = true;
             account = accounts[0];
           }

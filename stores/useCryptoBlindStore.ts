@@ -53,6 +53,10 @@ const useCryptoBlindStore = create<CryptoBlindStore>((set, get) => {
           state.wallet.address = account;
         });
       },
+      fetchAddressBadge: () => {
+        // ethplorer
+        // etherscan
+      },
     },
   };
 });
